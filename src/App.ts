@@ -69,7 +69,7 @@ export class App extends gfx.GfxApp
      * @param event - The MouseEvent object associated with the mouse click
      */
     onMouseDown(event: MouseEvent): void {
-       this.mousePosition = this.getNormalizedDeviceCoordinates(event.x, event.y);
+        this.mousePosition = this.getNormalizedDeviceCoordinates(event.x, event.y);
 
         this.laserSound.play();
         this.laserSound.currentTime = 0;
